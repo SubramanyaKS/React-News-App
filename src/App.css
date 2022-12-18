@@ -13,6 +13,54 @@
   }
 }
 
+.form button{
+  width: 320px;
+    height: 40px;
+    background-color: green !important;
+    border: 1px solid green;
+    color: black;
+    
+}
+h1,p{
+  color:#00ff00;
+}
+html,body{
+  background-color:#111;
+}
+.login{
+  align-items:center;
+  text-align:center;
+  background-color:#111;
+}
+.home{
+  align-items:center;
+  text-align:center;
+  background-color:#111;
+}
+.signup{
+  align-items:center;
+  text-align:center;
+  background-color:#111;
+}
+.form .btn{
+  background-color: brown;
+}
+/* .signup{
+  border: 1px solid green;
+} */
+
+.form input{
+  width:300px;
+    height:40px;
+    display:block;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    border: 1px solid green;
+    align-items: center;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
