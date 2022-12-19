@@ -21,7 +21,7 @@
     color: black;
     
 }
-h1,p{
+h1,h6,p{
   color:#00ff00;
 }
 html,body{
@@ -37,6 +37,44 @@ html,body{
   text-align:center;
   background-color:#111;
 }
+/* .card{
+  background-color:#111 !important;
+  margin-bottom:20px;
+  border: 1px solid green;
+
+} */
+.news-app {
+  display:flex;
+  justify-content: center; 
+}
+
+.news-item {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  background-color:#00ff00;
+}
+.news-item p, a{
+  color:#000;
+  text-decoration:none;
+}
+
+.news-img {
+  width: 90%;
+  height:100px;
+}
+.card{
+  margin-bottom:30px;
+  margin-left:30px;
+  margin-right:30px;
+  margin-top:10px;
+  background-color:#00ff00 !important;
+}
+.card-text{
+  margin-top:10px;
+  color:black !important;
+}
 .signup{
   align-items:center;
   text-align:center;
@@ -44,6 +82,10 @@ html,body{
 }
 .form .btn{
   background-color: brown;
+}
+.card-header, .card-footer{
+  background-color:#aaa !important;
+  color:#fff !important;
 }
 /* .signup{
   border: 1px solid green;
