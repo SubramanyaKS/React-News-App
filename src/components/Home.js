@@ -1,22 +1,28 @@
-import { useEffect, useState } from "react";
-import { Navigate } from "react-router-dom";
-const Home = () => {
-  const [authenticated, setauthenticated] = useState(null);
+import { useEffect } from "react";
+import { useNavigate } from "react-router";
+// import Card from "react-bootstrap/Card";
+// import Button from "react-bootstrap/Button";
+//import Items from "./Items";
 
-  useEffect(() => {
-    const loggedInUser = sessionStorage.getItem("cAuthenticated");
-    if (loggedInUser) {
-      setauthenticated(loggedInUser);
+const Home = (props) => {
+  const {Component}=props;
+  const navigate= useNavigate();
+  useEffect(()=>{
+    const login = sessionStorage.getItem("cAuthenticated");
+    console.log("Login",login);
+    if(!login){
+      navigate('/login');
     }
-  }, []);
-  if (!authenticated) {
-    return <Navigate replace to="/login" />;
-  } else {
-    return (
-      <div className="home">
-        <h1>Welcome to the Home Page</h1>
-      </div>
-    );
-  }
+
+  })
+  return(
+    <div>
+      <Component/>
+
+
+    </div>
+  )
+  
+  
 };
 export default Home;
