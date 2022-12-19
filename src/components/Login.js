@@ -34,7 +34,7 @@ const Login = () => {
     console.log("Emp",emp);
     if(emp!=null){
       sessionStorage.setItem("cAuthenticated",true);
-      window.location.href = "/home";
+      window.location.href = "/";
     }
     else{
       setErrorMsg("Invalid Credentials");
