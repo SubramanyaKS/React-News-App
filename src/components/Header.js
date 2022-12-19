@@ -11,7 +11,7 @@ const Header = () => {
   return (
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand style={{color:"#00ff00"}} href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand style={{color:"#00ff00"}} href="#home">Today News</Navbar.Brand>
           <Nav>
             {a?<>
             <Nav.Link style={{color:"#00ff00"}} href="/">Home</Nav.Link>
