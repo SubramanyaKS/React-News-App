@@ -15,6 +15,7 @@ const Header = () => {
           <Nav>
             {a?<>
             <Nav.Link style={{color:"#00ff00"}} href="/">Home</Nav.Link>
+            <Nav.Link style={{color:"#00ff00"}} href="/sports">Sports</Nav.Link>
             <Link style={{margin:"0.5rem",color: "#00ff00",textDecoration: "none"}}  onClick={Logout}> Log Out </Link></>
             :<>
             <Nav.Link style={{color:"#00ff00"}} href="/signup">Signup</Nav.Link>
