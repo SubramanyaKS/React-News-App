@@ -20,7 +20,7 @@ This is online news web app using React JS with support of NewsAPI.org API, wher
 1. Fork the Project and clone Repository using git clone
 
 ```
-git clone https://github.com/SubramanyaKS/Weather-app.git
+git clone https://github.com/SubramanyaKS/React-News-App.git
 ```
 
 2.  Install all dependency in package.json
@@ -31,7 +31,7 @@ npm install
 3.  Create .env folder and paste the key in variable REACT_APP_API_KEY
 
 ```
-REACT_APP_API_KEY=<Your openwearhermap API Key>
+REACT_APP_API_KEY=<Your API Key>
 ```
 
 4.  Run application using command
