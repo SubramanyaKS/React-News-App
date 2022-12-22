@@ -22,7 +22,7 @@ const News = () => {
 
   return (
     <div className="home">
-      <h6>Welcome to Today News</h6>
+      <h4>Top Headlines</h4>
       <div>
         {articles.map((article) => {
           return (
