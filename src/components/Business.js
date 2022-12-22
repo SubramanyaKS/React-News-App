@@ -22,7 +22,7 @@ const Business = () => {
 
   return (
     <div className="home">
-      <h6>Business News</h6>
+      <h4>Business News</h4>
       <div>
         {articles.map((article) => {
           return (
