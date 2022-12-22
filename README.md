@@ -46,6 +46,22 @@ npm start
 http://localhost/3000
 ```
 
+**Note:** For users details create db.json in root folder and add json in this passion
+
+```
+ {
+    "id": 3,
+    "name": "",
+    "pnumber": "",
+    "password": ""
+}
+```
+then run the command at db.json path
+
+```
+json-server --watch db.json --port <Any Port Number>
+```
+
 ## Contribution
 
 if you want to contribute to this project. 
