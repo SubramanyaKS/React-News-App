@@ -9,22 +9,56 @@ const Header = () => {
     window.location.href = "/login";
 }
   return (
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand style={{color:"#00ff00"}} href="#home">Today News</Navbar.Brand>
+    <Navbar
+      style={{ color: "black" }}
+      collapseOnSelect
+      expand="lg"
+      bg="dark"
+      variant="dark"
+    >
+      <Container>
+        <Navbar.Brand
+          style={{
+            fontFamily: "Comic Sans MS, Comic Sans, cursive",
+            color: "#00ff0d",
+          }}
+        >
+          QuickNews
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse className="justify-content-end">
           <Nav>
-            {a?<>
-            <Nav.Link style={{color:"#00ff00"}} href="/">Home</Nav.Link>
-            <Nav.Link style={{color:"#00ff00"}} href="/sports">Sports</Nav.Link>
-            <Link style={{margin:"0.5rem",color: "#00ff00",textDecoration: "none"}}  onClick={Logout}> Log Out </Link></>
-            :<>
-            <Nav.Link style={{color:"#00ff00"}} href="/signup">Signup</Nav.Link>
-            <Nav.Link style={{color:"#00ff00"}} href="/login">Login</Nav.Link>
-           
+          {a?<>
+            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/">
+              <h4>Home</h4>
+            </Nav.Link>
+            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/sports">
+              <h4>Sports</h4>
+            </Nav.Link>
+            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/business">
+              <h4>Business</h4>
+            </Nav.Link>
+            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/health">
+              <h4>Health</h4>
+            </Nav.Link>
+            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/science">
+              <h4>Science</h4>
+            </Nav.Link>
+            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}}  onClick={Logout}><h4>Log Out</h4> </Nav.Link>
+            </>:<>
+            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/signup">
+              <h4>Signup</h4>
+            </Nav.Link>
+            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/login">
+              <h4>Login</h4>
+            </Nav.Link>
             </>}
-            </Nav>
-        </Container>
-      </Navbar>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+   
+      
   );
 };
 export default Header;
