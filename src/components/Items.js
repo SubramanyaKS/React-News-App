@@ -7,12 +7,7 @@ const Items = ({ title, description, url, urlToImage,publishedAt,author,source }
     
     return (
         // <div className="news-app">
-        //     <div className='news-item'>
-        //         <img  src={urlToImage} alt={urlToImage} />
-        //         <h3><a style={{textDecoration:"none"}} href={url}>{title}</a></h3>
-        //         <p>{description}</p>
-        //     </div><img className='news-img' src={urlToImage} alt={urlToImage} />
-        // </div>
+       
         <Card className="text-center">
       <Card.Header>{source}</Card.Header>
       <Card.Img className="news-img" variant="top" src={urlToImage} />
