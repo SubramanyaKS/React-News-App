@@ -1,0 +1,13 @@
+.card {
+    width:30rem;
+    background-color:"#66fcf1" !important;
+}
+.headlines{
+    color:#000;
+  text-align:center;
+  
+}
+.card-holder{
+    display:"flex";
+    flex-direction:"row";
+}

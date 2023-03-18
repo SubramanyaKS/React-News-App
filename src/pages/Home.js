@@ -18,8 +18,6 @@ const Home = (props) => {
   return(
     <div>
       <Component/>
-
-
     </div>
   )
   

@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import axios from "axios";
-import Items from "./Items";
+import Items from "../components/Items";
+import { NewsState } from "../context/NewsContext";
+import '../assets/news.css';
 const News = () => {
-  const [articles, setArticles] = useState([]);
+  // const [articles, setArticles] = useState([]);
+  const {articles,setArticles} = NewsState();
 
   useEffect(() => {
     const news = async () => {
@@ -17,15 +20,17 @@ const News = () => {
           console.log(error);
         });
     };
-    console.log("News",news());
+    news();
+   // console.log("News",news());
   }, []);
 
   return (
     <div className="home">
-      <h4>Top Headlines</h4>
-      <div>
+      <h1 className="headlines">Top Headlines</h1>
+      <div className="row row-cols-1 row-cols-md-2 row-eq-height" >
         {articles.map((article) => {
           return (
+            <div className="col mb-4  d-flex align-items-stretch">
             <Items
               title={article.title}
               description={article.description}
@@ -35,6 +40,7 @@ const News = () => {
               author={article.author}
               source={article.source.name}
             />
+            </div>
           );
         })}
       </div>
