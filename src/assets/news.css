@@ -1,0 +1,12 @@
+.card {
+    width:30rem;
+}
+.headlines{
+    color:#000;
+  text-align:center;
+  
+}
+.card-holder{
+    display:"flex";
+    flex-direction:"row";
+}
