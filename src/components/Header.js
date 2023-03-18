@@ -9,11 +9,13 @@ const Header = () => {
 }
   return (
     <Navbar
-      style={{ color: "black" }}
+      style={{ backgroundColor: "#a8a8a7" }}
       collapseOnSelect
       expand="lg"
-      bg="dark"
-      variant="dark"
+      //bg="white"
+      variant="white"
+      shadow="lg"
+      className="shadow-lg p-3 mb-5"
     >
       <Container>
         <Navbar.Brand
