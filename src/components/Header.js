@@ -22,34 +22,37 @@ const Header = () => {
             color: "#00ff0d",
           }}
         >
-          QuickNews
+          QuickNewz
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">
           <Nav>
           {a?<>
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/">
-              <h4>Home</h4>
+              <h5>Home</h5>
             </Nav.Link>
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/sports">
-              <h4>Sports</h4>
+              <h5>Sports</h5>
             </Nav.Link>
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/business">
-              <h4>Business</h4>
+              <h5>Business</h5>
             </Nav.Link>
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/health">
-              <h4>Health</h4>
+              <h5>Health</h5>
+            </Nav.Link>
+            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/technology">
+              <h5>Technology</h5>
             </Nav.Link>
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/science">
-              <h4>Science</h4>
+              <h5>Science</h5>
             </Nav.Link>
-            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}}  onClick={Logout}><h4>Log Out</h4> </Nav.Link>
+            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}}  onClick={Logout}><h5>Log Out</h5> </Nav.Link>
             </>:<>
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/signup">
-              <h4>Signup</h4>
+              <h5>Signup</h5>
             </Nav.Link>
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/login">
-              <h4>Login</h4>
+              <h5>Login</h5>
             </Nav.Link>
             </>}
           </Nav>
