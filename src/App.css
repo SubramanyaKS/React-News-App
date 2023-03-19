@@ -30,7 +30,7 @@ html,body{
 .login{
   align-items:center;
   text-align:center;
-  background-color:#111;
+  background-color:#fff;
 }
 .home{
   align-items:center;
@@ -81,7 +81,7 @@ html,body{
 .signup{
   align-items:center;
   text-align:center;
-  background-color:#111;
+  background-color:#fff;
 }
 .form .btn{
   background-color: brown;
