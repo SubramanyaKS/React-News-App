@@ -21,7 +21,7 @@ const Items = ({ title, description, url, urlToImage,publishedAt,author,source }
         <Button onClick={() => { window.location.href = url; } } variant="outline-dark">Read More</Button>
         </a>
       </Card.Body>
-      <Card.Footer>{publishedAt}</Card.Footer>
+      <Card.Footer className="card-footer">{publishedAt}</Card.Footer>
     </Card>
     )
 }
