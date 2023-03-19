@@ -78,6 +78,16 @@ html,body{
   margin-top:10px;
   color:black !important;
 }
+.cheader.card-header {
+  color: #fff !important;
+  background-color: #111 !important;
+}
+.card-footer.card-footer {
+  background-color: #111 !important;
+}
+.card-footer{
+  background-color:#111 !important;
+}
 .signup{
   align-items:center;
   text-align:center;
