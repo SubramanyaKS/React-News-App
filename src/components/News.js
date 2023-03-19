@@ -30,7 +30,7 @@ const News = () => {
       <div className="row row-cols-1 row-cols-md-2 row-eq-height" >
         {articles.map((article) => {
           return (
-            <div className="col mb-4  d-flex align-items-stretch">
+            <div className="col mb-4  d-flex align-items-stretch" key={article.id}>
             <Items
               title={article.title}
               description={article.description}
