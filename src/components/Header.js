@@ -12,6 +12,7 @@ const Header = () => {
       style={{ backgroundColor: "#a8a8a7" }}
       collapseOnSelect
       expand="lg"
+      sticky="top"
       //bg="white"
       variant="white"
       shadow="lg"
