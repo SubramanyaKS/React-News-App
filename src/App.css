@@ -68,11 +68,12 @@ html,body{
   height:100px;
 }
 .card{
-  margin-bottom:30px;
-  margin-left:30px;
-  margin-right:30px;
+  margin-bottom:20px;
+  margin-left:20px;
+  margin-right:20px;
   margin-top:10px;
   background-color:#66fcf1 !important;
+  box-shadow: 5px 4px 20px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 .card-text{
   margin-top:10px;
