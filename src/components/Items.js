@@ -8,7 +8,7 @@ const Items = ({ title, description, url, urlToImage,publishedAt,author,source }
     return (
         // <div className="news-app">
        
-        <Card className="shadow-lg text-center">
+        <Card className=" text-center">
       <Card.Header className="cheader">{source}</Card.Header>
       <Card.Img className="news-img" variant="top" src={urlToImage} />
       <Card.Body>
@@ -18,7 +18,7 @@ const Items = ({ title, description, url, urlToImage,publishedAt,author,source }
          {description}
         </Card.Text>
         <a href={url} target="_blank" rel="noreferrer">
-        <Button onClick={() => { window.location.href = url; } } variant="outline-dark">Read More</Button>
+        <Button onClick={() => { window.location.href = url; } } variant="outline-dark"><b>Read More</b></Button>
         </a>
       </Card.Body>
       <Card.Footer className="card-footer">{publishedAt}</Card.Footer>
