@@ -58,7 +58,7 @@ http://localhost/3000
 ```
 then run the command at db.json path
 
-```
+```sh
 json-server --watch db.json --port <Any Port Number>
 ```
 
