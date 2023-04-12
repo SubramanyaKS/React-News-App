@@ -19,13 +19,13 @@ This is online news web app using React JS with support of NewsAPI.org API, wher
 
 1. Fork the Project and clone Repository using git clone
 
-```
+```sh
 git clone https://github.com/SubramanyaKS/React-News-App.git
 ```
 
 2.  Install all dependency in package.json
 
-```
+```sh
 npm install
 ```
 3.  Create .env folder and paste the key in variable REACT_APP_API_KEY
@@ -36,7 +36,7 @@ REACT_APP_API_KEY=<Your API Key>
 
 4.  Run application using command
 
-```
+```sh
 npm start
 ```
 
@@ -48,7 +48,7 @@ http://localhost/3000
 
 **Note:** For users details create db.json in root folder and add json in this passion
 
-```
+```json
  {
     "id": 3,
     "name": "",
