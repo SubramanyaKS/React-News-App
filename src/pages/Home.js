@@ -10,9 +10,9 @@ const Home = (props) => {
   useEffect(()=>{
     const login = sessionStorage.getItem("cAuthenticated");
     console.log("Login",login);
-    if(!login){
-      navigate('/login');
-    }
+    // if(!login){
+    //   navigate('/login');
+    // }
 
   })
   return(
