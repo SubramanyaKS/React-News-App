@@ -2,11 +2,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 const Header = () => {
-  let a=sessionStorage.getItem('cAuthenticated');
-  const Logout=()=>{
-    sessionStorage.removeItem('cAuthenticated');
-    window.location.href = "/login";
-}
+//   let a=sessionStorage.getItem('cAuthenticated');
+//   const Logout=()=>{
+//     sessionStorage.removeItem('cAuthenticated');
+//     window.location.href = "/login";
+// }
   return (
     <Navbar
       style={{ backgroundColor: "#a8a8a7" }}
