@@ -27,10 +27,10 @@ const News = () => {
   return (
     <div className="home">
       <h1 className="headlines">Top Headlines</h1>
-      <div className="row row-cols-1 row-cols-md-2 row-eq-height" >
+      <div className="row row-cols-1 row-cols-md-3 row-eq-height" >
         {articles.map((article) => {
           return (
-            <div className="col mb-4  d-flex align-items-stretch" key={article.id}>
+            <div className="col-sm-4  d-flex align-items-stretch" key={article.id}>
             <Items
               title={article.title}
               description={article.description}

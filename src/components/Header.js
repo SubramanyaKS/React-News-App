@@ -2,11 +2,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 const Header = () => {
-  let a=sessionStorage.getItem('cAuthenticated');
-  const Logout=()=>{
-    sessionStorage.removeItem('cAuthenticated');
-    window.location.href = "/login";
-}
+//   let a=sessionStorage.getItem('cAuthenticated');
+//   const Logout=()=>{
+//     sessionStorage.removeItem('cAuthenticated');
+//     window.location.href = "/login";
+// }
   return (
     <Navbar
       style={{ backgroundColor: "#a8a8a7" }}
@@ -30,7 +30,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">
           <Nav>
-          {a?<>
+          {/* {a?<> */}
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/">
               <h5>Home</h5>
             </Nav.Link>
@@ -49,15 +49,15 @@ const Header = () => {
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/science">
               <h5>Science</h5>
             </Nav.Link>
-            <Nav.Link style={{color: "#00ff00",textDecoration: "none"}}  onClick={Logout}><h5>Log Out</h5> </Nav.Link>
-            </>:<>
+            {/* <Nav.Link style={{color: "#00ff00",textDecoration: "none"}}  onClick={Logout}><h5>Log Out</h5> </Nav.Link> */}
+            {/* </>:<>
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/signup">
               <h5>Signup</h5>
             </Nav.Link>
             <Nav.Link style={{color: "#00ff00",textDecoration: "none"}} href="/login">
               <h5>Login</h5>
             </Nav.Link>
-            </>}
+            </>} */}
           </Nav>
         </Navbar.Collapse>
       </Container>
