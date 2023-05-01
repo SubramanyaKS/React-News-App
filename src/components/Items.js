@@ -4,10 +4,10 @@ import Card from 'react-bootstrap/Card';
 
 const Items = ({ title, description, url, urlToImage,publishedAt,author,source }) => {
   
-  var localTime = new Date(publishedAt);
+  let localTime = new Date(publishedAt).toLocaleTimeString();
   // console.log(typeof localTime);
   // console.log(localTime);
-  let local =''+localTime;
+  let localDate = new Date(publishedAt).toLocaleDateString();
 
 
     return (
@@ -27,7 +27,7 @@ const Items = ({ title, description, url, urlToImage,publishedAt,author,source }
         </a>
       </Card.Body>
 
-      <Card.Footer className="card-footer">{local}</Card.Footer>
+      <Card.Footer className="card-footer">{localDate}{" "}{localTime}</Card.Footer>
     </Card>
     )
 }
