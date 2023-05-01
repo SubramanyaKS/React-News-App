@@ -27,7 +27,7 @@ const Items = ({ title, description, url, urlToImage,publishedAt,author,source }
         </a>
       </Card.Body>
 
-      <Card.Footer className="card-footer">{localDate}{" "}{localTime}</Card.Footer>
+      <Card.Footer className="card-footer">Published on: {localDate} at {localTime}</Card.Footer>
     </Card>
     )
 }
