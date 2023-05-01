@@ -25,10 +25,10 @@ const AllNews = (props) => {
       
     <div className="container-fluid">
         <h1 className="headlines">Top {props.name} News Headlines</h1>
-    <div className="row row-cols-1 row-cols-md-2 row-eq-height" >
+    <div className="row row-cols-1 row-cols-md-3 row-eq-height" >
         {articles.map((article) => {
           return (
-            <div className="col mb-4  d-flex align-items-stretch">
+            <div className="col sm-4  d-flex align-items-stretch">
             <Items
               title={article.title}
               description={article.description}
