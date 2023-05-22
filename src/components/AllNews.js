@@ -1,26 +1,12 @@
-import React, { useEffect } from 'react'
-import { NewsState } from '../context/NewsContext';
+import React from 'react'
 import Items from './Items';
-import axios from 'axios';
 import '../assets/news.css'
-const AllNews = (props) => {
-    const {articles, setArticles} = NewsState();
-    useEffect(()=>{
-        const news = async () => {
-            axios
-              .get(
-                `https://newsapi.org/v2/top-headlines?q=${props.name}&apiKey=${process.env.REACT_APP_API_KEY}`
-              )
-              .then((response) => {
-                setArticles(response.data.articles);
-              })
-              .catch((error) => {
-                console.log(error);
-              });
-          };
-          news();
+import useFetch from '../hooks/useFetch';
 
-    },[])
+const AllNews = (props) => {
+  // Used custom hook useFetch to fetch the data
+  const {articles} = useFetch(`https://newsapi.org/v2/top-headlines?q=${props.name}&apiKey=${process.env.REACT_APP_API_KEY}`);
+    
   return (
       
     <div className="container-fluid">

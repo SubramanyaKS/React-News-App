@@ -1,29 +1,11 @@
-import { useEffect } from "react";
-import axios from "axios";
 import Items from "../components/Items";
-import { NewsState } from "../context/NewsContext";
 import '../assets/news.css';
+import useFetch from "../hooks/useFetch";
+
 const News = () => {
-  // const [articles, setArticles] = useState([]);
-  const {articles,setArticles} = NewsState();
-
-  useEffect(() => {
-    const news = async () => {
-      axios
-        .get(
-          `https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.REACT_APP_API_KEY}`
-        )
-        .then((response) => {
-          setArticles(response.data.articles);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    };
-    news();
-   // console.log("News",news());
-  }, []);
-
+  // Used custom hook useFetch to fetch the data
+  const {articles} = useFetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.REACT_APP_API_KEY}`);
+  
   return (
     <div className="home">
       <h1 className="headlines">Top Headlines</h1>
