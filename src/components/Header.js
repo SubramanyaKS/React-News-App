@@ -9,7 +9,7 @@ const Header = () => {
 // }
   return (
     <Navbar
-      style={{ backgroundColor: "#a8a8a7" }}
+      style={{ backgroundColor: "#000" }}
       collapseOnSelect
       expand="lg"
       sticky="top"
