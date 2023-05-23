@@ -15,7 +15,7 @@ const Items = ({ title, description, url, urlToImage,publishedAt,author,source }
        
         <Card className=" text-center">
       <Card.Header className="cheader">{source}</Card.Header>
-      <Card.Img className="news-img" variant="top" src={urlToImage} />
+      <Card.Img className="news-img img-fluid" variant="top" src={urlToImage} alt="image from source" />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         {author?<Card.Subtitle>Author: {author}</Card.Subtitle>:<Card.Subtitle>Author: unknown</Card.Subtitle>}
