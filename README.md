@@ -1,6 +1,6 @@
 #  React News App
 
-This is online news web app using React JS with support of NewsAPI.org API, where users can read news from various source 
+This is a React JS-based online news web app that utilizes the NewsAPI.org API. It allows users to access and read news articles from a wide range of sources
 
 ## Technology Used
 
