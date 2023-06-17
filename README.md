@@ -46,6 +46,7 @@ npm start
 http://localhost/3000
 ```
 **Note:** Currently user details has been removed. you can include if you want.
+
 **Note:** For users details create db.json in root folder and add json in this passion
 
 ```json
