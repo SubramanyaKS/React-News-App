@@ -40,7 +40,7 @@ REACT_APP_API_KEY=<Your API Key>
 npm start
 ```
 
-5. Automatically open the website in localhost
+5. Automatically open the website in localhost or just type below url in browser
 
 ```
 http://localhost/3000
