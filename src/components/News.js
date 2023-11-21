@@ -7,7 +7,7 @@ const News = () => {
   const {articles} = useFetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.REACT_APP_API_KEY}`);
   
   return (
-    <div className="home">
+    <div className="container-fluid">
       <h1 className="headlines">Top Headlines</h1>
       <div className="row row-cols-1 row-cols-md-3 row-eq-height" >
         {articles.map((article) => {
@@ -20,7 +20,7 @@ const News = () => {
               urlToImage={article.urlToImage}
               publishedAt={article.publishedAt}
               author={article.author}
-              source={article.source.name}
+              source={article.source.name}z
             />
             </div>
           );
