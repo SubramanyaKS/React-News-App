@@ -11,3 +11,6 @@
     display:"flex";
     flex-direction:"row";
 }
+.card-footer{
+    background-color: aqua !important;
+}
