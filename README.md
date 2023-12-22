@@ -76,7 +76,7 @@ json-server --watch db.json --port <Any Port Number>
 
 ## Contribution
 
-We welcome contributions! If you'd like to contribute to Weather-app, please follow our [Contribution Guidelines](https://github.com/SubramanyaKS/Tic-Tac-Toe/blob/main/CONTRIBUTING.md).
+We welcome contributions! If you'd like to contribute to React-News-App, please follow our [Contribution Guidelines](https://github.com/SubramanyaKS/React-News-App/blob/main/CONTRIBUTING.md).
 
 
 If you like the project 🌟 the repository.
