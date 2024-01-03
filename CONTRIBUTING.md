@@ -74,6 +74,6 @@ Please read and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) to foster an
 
 ## Thank You
 
-Thank you for contributing to weatherApp! Your efforts help make our project better.
+Thank you for contributing to  NewsApp! Your efforts help make our project better.
 
 Happy Coding!
