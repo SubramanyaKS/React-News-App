@@ -3,12 +3,12 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import Routing from './Routing';
-import NewsContext from './context/NewsContext';
+import { NewProvider } from './context/NewsContext';
 function App() {
   return (
-    <NewsContext>
+    <NewProvider>
     <Routing/>
-    </NewsContext>
+    </NewProvider>
   );
 }
 
