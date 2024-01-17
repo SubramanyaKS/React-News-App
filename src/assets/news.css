@@ -1,6 +1,7 @@
-.card {
+.card{
     width:30rem;
-    background-color:"#66fcf1" !important;
+    /* background-color:#66fcf1 !important; */
+    background-color: #fff !important;
 }
 .headlines{
     color:#000;
@@ -14,3 +15,35 @@
 .card-footer{
     background-color: aqua !important;
 }
+
+
+
+
+.category-button{
+    padding:1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .category-button > button{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: none;
+    border-radius: 16px;
+    width:150px;
+    margin: 1%;
+    box-shadow: 0 0 6px 6px #f0f0f0;
+    background-color: #fff;
+  }
+  .category-button > button.active {
+    background-color: #000;
+    color: #fff;
+  }
+  .category-button > button:hover{
+    
+    background-color: #000;
+    color:#fff;
+  }
+  .category-button >  button:focus{
+    background-color:#00ff00;
+  }
