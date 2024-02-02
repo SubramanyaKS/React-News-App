@@ -48,13 +48,13 @@ REACT_APP_API_KEY=<Your API Key>
 4.  Run application using command
 
 ```sh
-npm start
+npm run dev
 ```
 
 5. Automatically open the website in localhost or just type below url in browser
 
 ```
-http://localhost/3000
+http://localhost/5173
 ```
 **Note:** Currently user details has been removed. you can include if you want.
 
