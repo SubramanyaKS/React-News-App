@@ -1,0 +1,1 @@
+export const categories:string[] = ["General","entertainment","sports","science","technology","health","business"]
