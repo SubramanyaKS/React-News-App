@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from './components/Header';
 import Home  from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -9,7 +8,7 @@ const Routing = () => {
     <Router>
       <Header/>
       <Routes>
-            <Route exact path="/" element={<Home/>} />
+            <Route path="/" element={<Home/>} />
       </Routes>
       </Router>
   )

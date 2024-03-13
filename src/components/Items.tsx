@@ -2,6 +2,18 @@ import "../App.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import image1 from '../assets/news.jpg';
+import { ToggleContext } from "../context/ToggleContext";
+import { useContext } from "react";
+
+type Props={
+  title:string,
+  description:string,
+  url:string,
+  urlToImage:string,
+  publishedAt:string,
+  author:string,
+  source:string,
+}
 
 const Items = ({
   title,
@@ -11,14 +23,12 @@ const Items = ({
   publishedAt,
   author,
   source,
-}) => {
-  // let localTime = new Date(publishedAt).toLocaleTimeString();
-  // console.log(typeof localTime);
-  // console.log(localTime);
-  let localDate = new Date(publishedAt).toLocaleDateString();
+}:Props) => {
+  const {toggle} = useContext(ToggleContext);
+  const localDate:string = new Date(publishedAt).toLocaleDateString();
 
   return (
-    <Card className=" text-center">
+    <Card className={toggle?"card-dark text-center":"card-light text-center"}>
       <Card.Header className="cheader">{source}</Card.Header>
       <Card.Img
         className="news-img img-fluid"
@@ -48,10 +58,6 @@ const Items = ({
           </Button>
         </a>
       </Card.Body>
-
-      {/* <Card.Footer className="bg-success card-footer">
-        Published on: {localDate}
-      </Card.Footer> */}
     </Card>
   );
 };

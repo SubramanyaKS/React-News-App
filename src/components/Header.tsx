@@ -1,7 +1,12 @@
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-const Header = () => {
+import ToggleSwitch from "./ToggleSwitch";
+import { useContext } from "react";
+import { ToggleContext } from "../context/ToggleContext";
+
+const Header:React.FC = () => {
+  const {toggle,setToggle} = useContext(ToggleContext);
 //   let a=sessionStorage.getItem('cAuthenticated');
 //   const Logout=()=>{
 //     sessionStorage.removeItem('cAuthenticated');
@@ -14,14 +19,12 @@ const handleGitHubClick = () => {
 
   return (
     <Navbar
-      style={{ backgroundColor: "#fff" }}
+      style={{ backgroundColor: toggle?"#222222":"#fff" }}
       collapseOnSelect
       expand="lg"
       sticky="top"
-      //bg="white"
-      variant="white"
-      shadow="lg"
-      className="shadow-lg p-3 mb-5"
+      variant={toggle?"dark":"white"}
+      className={toggle?"shadow-dark p-3":"shadow-lg p-3"}
     >
       <Container>
         <Navbar.Brand
@@ -36,6 +39,9 @@ const handleGitHubClick = () => {
         <Navbar.Collapse className="justify-content-end">
           <Nav >
             <Nav.Link onClick={()=>handleGitHubClick()} className="text-success text-decoration-none">Github</Nav.Link>
+          </Nav>
+          <Nav>
+            <ToggleSwitch/>
           </Nav>
         </Navbar.Collapse>
       </Container>
