@@ -21,7 +21,7 @@ Please read and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) to foster an
 ## Getting Started
 
 1. **Fork the Repository:**
-   - Fork the NamKart repository to your GitHub account.
+   - Fork the React News App repository to your GitHub account.
 
 2. **Clone the Repository:**
    - Clone your forked repository to your local machine.
