@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import ToggleSwitch from "./ToggleSwitch";
+// import ToggleSwitch from "./ToggleSwitch";
+import { ToggleSwitch } from 'reactjs-toggleswitch';
 import { useContext } from "react";
 import { ToggleContext } from "../context/ToggleContext";
 
@@ -42,7 +43,7 @@ const handleGitHubClick = () => {
             <Nav.Link onClick={()=>handleGitHubClick()} className="text-success text-decoration-none">Github</Nav.Link>
           </Nav>
           <Nav>
-            <ToggleSwitch/>
+            <ToggleSwitch checked={toggle} onToggle={()=>setToggle(!toggle)} onColor='#0f0'/>
           </Nav>
         </Navbar.Collapse>
       </Container>
