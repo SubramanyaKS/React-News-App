@@ -4,16 +4,8 @@ import Card from "react-bootstrap/Card";
 import image1 from '../assets/news.jpg';
 import { ToggleContext } from "../context/ToggleContext";
 import { useContext } from "react";
-
-type Props={
-  title:string,
-  description:string,
-  url:string,
-  urlToImage:string,
-  publishedAt:string,
-  author:string,
-  source:string,
-}
+import React from "react";
+import { NewsProps } from "../utils/types";
 
 const Items = ({
   title,
@@ -23,7 +15,7 @@ const Items = ({
   publishedAt,
   author,
   source,
-}:Props) => {
+}:NewsProps) => {
   const {toggle} = useContext(ToggleContext);
   const localDate:string = new Date(publishedAt).toLocaleDateString();
 
