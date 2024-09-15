@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import Items from '../components/Items';
 import { categories } from '../utils/category';
 import '../assets/news.css';
-import { useNews } from '../context/NewsContext';
 import { ToggleContext } from '../context/ToggleContext';
+import { useNews } from '../hook/useNews';
 
 const Home: React.FC = () => {
   const { data, fetchData,error } = useNews();
