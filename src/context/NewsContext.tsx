@@ -1,46 +1,12 @@
 import React, { useState, useContext, createContext, useEffect } from 'react';
 import axios from 'axios';
 import '../assets/news.css';
+import { Article, NewsApiResponse, NewsContextType, Props } from '../utils/types';
+import { getURL } from '../utils/util';
 
-interface Props {
-  children: React.ReactNode;
-}
-
-// Define types
-interface Article {
-  // Define the properties of an article
-  // Adjust these according to the actual structure of the data
-  // For example, if you're using TypeScript with Axios, AxiosResponse<Article[]> might be more appropriate
-  // This is just an example based on the existing code
-  // You can adjust the types based on the actual data structure
-  title: string;
-  description: string;
-  url: string;
-  // Add more properties as needed
-}
-interface NewsApiResponse {
-  articles: Article[];
-  // Add more properties as needed
-}
-
-
-interface NewsContextType {
-  data: Article[];
-  fetchData: (category: string) => void;
-  error:String;
-}
 
 // Create a context for managing news data
-const NewsContext = createContext<NewsContextType | undefined>(undefined);
-
-// Create a custom hook to interact with the NewsContext
-const useNews = () => {
-  const context = useContext(NewsContext);
-  if (!context) {
-    throw new Error('useNews must be used within a NewsProvider');
-  }
-  return context;
-};
+export const NewsContext = createContext<NewsContextType | undefined>(undefined);
 
 // Create a NewsProvider component to wrap your app with the NewsContext
 const NewsProvider: React.FC<Props> = ({ children }) => {
@@ -48,15 +14,11 @@ const NewsProvider: React.FC<Props> = ({ children }) => {
   const [error,setError] = useState<String>("");
 
   const fetchData = (category: string) => {
-    let url = `https://newsapi.org/v2/top-headlines?q=${category}&apiKey=${import.meta.env.VITE_APP_API_KEY}`;
-    if (category === 'General') {
-      url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${import.meta.env.VITE_APP_API_KEY}`;
-    }
+    let url = getURL(category);
     axios
       .get<NewsApiResponse>(url)
       .then((res) => setData(res.data.articles))
       .catch((error) => {
-        console.log(error);
         setError(error.message)
       });
   };
@@ -74,4 +36,4 @@ const NewsProvider: React.FC<Props> = ({ children }) => {
   );
 };
 
-export { NewsProvider, useNews };
+export { NewsProvider };

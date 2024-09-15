@@ -1,16 +1,10 @@
 import React, { useState } from "react";
 import { createContext } from "react";
+import { ToggleContextValue, ToggleProps } from "../utils/types";
 
-interface Props {
-    children: React.ReactNode;
-  }
-interface ToggleContextValue {
-    toggle: boolean;
-    setToggle: React.Dispatch<React.SetStateAction<boolean>>;
-  }
 const ToggleContext = createContext<ToggleContextValue | any>(undefined);
 
-const ToggleProvider: React.FC<Props> = ({ children }) => {
+const ToggleProvider: React.FC<ToggleProps> = ({ children }) => {
     const [toggle,setToggle]= useState(false);
     const contextValue: ToggleContextValue = {
         toggle,
