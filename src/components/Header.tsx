@@ -6,18 +6,10 @@ import Nav from "react-bootstrap/Nav";
 import { ToggleSwitch } from 'reactjs-toggleswitch';
 import { useContext } from "react";
 import { ToggleContext } from "../context/ToggleContext";
+import { handleGitHubClick } from '../utils/util';
 
 const Header:React.FC = () => {
   const {toggle,setToggle} = useContext(ToggleContext);
-//   let a=sessionStorage.getItem('cAuthenticated');
-//   const Logout=()=>{
-//     sessionStorage.removeItem('cAuthenticated');
-//     window.location.href = "/login";
-// }
-const handleGitHubClick = () => {
-  // Navigate to GitHub
-  window.open('https://github.com/SubramanyaKS/React-News-App', '_blank');
-};
 
   return (
     <Navbar
@@ -48,8 +40,7 @@ const handleGitHubClick = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-   
-      
+         
   );
 };
 export default Header;
